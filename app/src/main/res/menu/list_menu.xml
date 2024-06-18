@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item android:id="@+id/add_anggota"
+        android:icon="@drawable/settings_24"
+        android:title="Daftarkan Anggota Baru"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/add_customer"
+        android:icon="@drawable/settings_24"
+        android:title="Tambahkan Data Customer"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/show_anggota"
+        android:icon="@drawable/settings_24"
+        android:title="Lihat Data Anggota"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/show_customer"
+        android:icon="@drawable/settings_24"
+        android:title="Lihat Data Customer"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/pengaturan"
+        android:icon="@drawable/settings_24"
+        android:title="Pengaturan"
+        app:showAsAction="never"
+        />
+</menu>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TambahCustomer">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_300"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Tambahkan Data Pelanggan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="vertical"
+        android:layout_marginTop="75dp"
+        android:paddingHorizontal="20dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Isi data pelanggan dengan valid untuk kemudahan proses kerja proyek pengelasan anda"
+            android:textSize="15sp"
+            android:paddingBottom="10dp"
+            />
+        <View
+            android:layout_width="200dp"
+            android:layout_height="10px"
+            android:background="@color/purple_600"
+            android:layout_marginBottom="30dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masukan nama pelanggan"
+            android:textColor="@color/purple_800"
+            android:layout_marginBottom="5dp"
+            android:textStyle="normal"
+            />
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle4"
+            android:paddingHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat lengkap"
+            android:textColor="@color/purple_800"
+            android:layout_marginBottom="5dp"
+            android:textStyle="normal"
+            />
+        <EditText
+            android:id="@+id/input_address"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/textarea"
+            android:paddingHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="textMultiLine"
+            />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masukan nomor telepon (WhatsApp)"
+            android:textColor="@color/purple_800"
+            android:layout_marginBottom="5dp"
+            android:textStyle="normal"
+            />
+        <EditText
+            android:id="@+id/input_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle4"
+            android:paddingStart="50dp"
+            android:paddingEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="phone"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+62 "
+            android:textColor="@color/purple_950"
+            android:layout_marginBottom="5dp"
+            android:textStyle="normal"
+            android:textSize="18dp"
+            android:layout_marginTop="-41dp"
+            android:paddingStart="10dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_600"
+            android:text="Tambahkan Data"
+            app:cornerRadius="20dp"
+            android:layout_marginTop="20dp"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
